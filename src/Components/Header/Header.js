@@ -21,8 +21,8 @@ const Header = () => {
                     <img src={Logo} alt="Logo" width="80px" />
                 </NavbarBrand>
                 <Nav className="mr-md-5">
-                    <NavItem>
-                        <NavLink href="#" className="NavLink">Something</NavLink>
+                    <NavItem  className="NavLink">
+                        <NavLink href="#">Something</NavLink>
                     </NavItem>
                 </Nav>
             </Navbar>
