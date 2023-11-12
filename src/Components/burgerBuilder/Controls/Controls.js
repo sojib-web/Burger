@@ -10,7 +10,7 @@ const controls = [
 
 const BuildControl = props => {
     return (
-        <div className="Container">
+        <div className="d-flex">
             <div className="Label">{props.label}</div>
             <Button  className="btn btn-denger btn-sm m-1" onClick={props.removed}>Less</Button >
              <Button className="btn btn-success btn-sm m-1" onClick={props.added}>More</Button>
@@ -45,7 +45,9 @@ const Controls = props => {
                         })
                     }
                 </CardBody>
-                <CardFooter><h5>Price: BDT</h5></CardFooter>
+                <CardFooter><h5>Price: <strong>{props.price}</strong> BDT</h5></CardFooter>
+                <Button style={{backgroundColor: "#D70F64"}} disabled={!props.purchasable}
+                onClick={props.toggleModal}>Order Now</Button>
             </Card>
         </div>
     )
