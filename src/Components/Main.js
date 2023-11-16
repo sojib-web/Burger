@@ -9,7 +9,7 @@ import CheckOut from './Orders/CheckOut/CheckOut'
     <div>
         <Header/>
        <div className='container'>
-       <Routes>
+       <Routes>*
             <Route path='/' element={<BurgerBuilder/>}></Route>
             <Route path='/Orders' element={<Orders/>}></Route>
             <Route path='CheckOut' element={<CheckOut/>}></Route>
