@@ -29,5 +29,9 @@ export const auth = (email, password, mode) => dispatch => {
          .then(response => {
             dispatch(authSuccess(response.data.idToken, response.data.localId))
          })
+
+         .catch(error => {
+            console.error('Authentication failed:', error.response.data);
+          });
       
 }
